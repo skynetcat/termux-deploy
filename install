@@ -7,7 +7,7 @@ termux-setup-storage
 pkg update && pkg upgrade -y
 pkg install openssl nala -y
 
-nala install $(sed '/^$/d; /^#/d' pkgs.md | tr '\n' ' ') -y
+nala install $(sed '/^$/d; /^#/d; s/^- //g' pkgs.md | tr '\n' ' ') -y
 
 pip install img2pdf pdf2img
 
