@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# Setup termux access to android storage
+termux-setup-storage
+
+# Install packages
+pkg update && pkg upgrade -y
+pkg install openssl nala -y
+
+nala install $(sed '/^$/d; /^#/d' pkgs.md | tr '\n' ' ') -y
+
+pip install img2pdf pdf2img
+
+# Enable Services
+sv-enable atd
+sv-enable crond
+
+cat <<MSG
+Installation complete!
+Please, restart Termux
+MSG
