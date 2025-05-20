@@ -1,6 +1,7 @@
 # Termux
 - termux-api
 - tur-repo
+- proot-distro
 
 # Services
 - termux-services
@@ -20,6 +21,7 @@
 - tmux
 - taskwarrior
 - ffmpeg
+- megacmd
 
 # Utilities
 - shellcheck
@@ -34,6 +36,15 @@
 - rsync
 - rclone
 - android-tools
+- bat
+- exiftool
+- eza
+- htop
+- imagemagick
+- realesrgan-ncnn-vulkan
+- ripgrep
+- stow
+- tree
 
 # Dependencies
 ## Img2pdf / pdf2img
